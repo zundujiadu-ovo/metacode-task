@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>学生工作系统管理后台</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta charset="utf-8" />
+    <style>
+        .option-container {
+            background-color: black;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 0;
+            margin: 0;
+            position: fixed;
+            left: 65%;
+            top: 27%;
+            width: 24%;
+            height: 62%;
+        }
+
+            .option-container .prompt-text {
+                color: white;
+                opacity: 1.0;
+                font-size: 18px;
+                display: block;
+                width: 100%;
+                text-align: center;
+                margin: 5% 0% 5% 0%;
+            }
+
+            .option-container .option {
+                background-color: white;
+                opacity: 0.8;
+                margin: 3% auto;
+                width: 80%;
+                height: 12%;
+                position: relative;
+                top: 4%;
+                user-select:none;
+            }
+
+                .option-container .option .img-wrap {
+                    position: relative;
+                    height: 75%;
+                    width: 0;
+                    top: 12.5%;
+                    left: 10%;
+                    padding-right: 30%;
+                    /*background-color: green;*/
+                    display: inline-block;
+                }
+
+                    .option-container .option .img-wrap img {
+                        position: absolute;
+                        height: 100%;
+                    }
+
+                .option-container .option .text {
+                    position: absolute;
+                    left: 45%;
+                    top: 0%;
+                    display: block;
+                    height: 100%;
+                    color: black;
+                    font-size: 18px;
+                    text-align: center;
+                    line-height: 100%;
+                    /*margin: 0 auto;*/
+                    /*background-color:aqua;*/
+                }
+    </style>
+</head>
+<body background="img/login-bkg.jpg" style="background-attachment: fixed; background-size: 100% 100%">
+    <img src="img/schl-logo.png" alt="广东工业大学" style="position:absolute;left:12%;top:3%" />
+    <div class="option-container">
+        <div class="prompt-text">请选择角色</div>
+        <!-- STUDENT -->
+        <a href="login.html">
+            <div class="option">
+                <div class="img-wrap">
+                    <img src="img/icon/student.png" />
+                </div>
+                <div class="text" style="left:49%"><p>学&nbsp;&nbsp;生</p></div>
+            </div>
+        </a>
+        <!-- MONITOR -->
+        <a href="javascript:void(0);">
+            <div class="option">
+                <div class="img-wrap">
+                   <img src="img/icon/monitor.png" />
+                </div>
+                <div class="text"><p>学生班委</p></div>
+            </div>
+        </a>
+        <!-- EMPLOY -->
+        <a href="javascript:void(0);">
+            <div class="option">
+                <div class="img-wrap">
+                    <img src="img/icon/employ.png" />
+                </div>
+                <div class="text"><p>用工单位</p></div>
+            </div>
+        </a>
+        <!-- ADMIN -->
+        <a href="javascript:void(0);">
+            <div class="option">
+                <div class="img-wrap">
+                    <img src="img/icon/admin.png" />
+                </div>
+                <div class="text" style="left:42%"><p>学校管理员</p></div>
+            </div>
+        </a>
+        <!-- CSA -->
+        <a href="login.html">
+            <div class="option">
+                <div class="img-wrap">
+                    <img src="img/icon/csa.png" />
+                </div>
+                <div class="text" style="left:35%"><p>统一身份认证登录</p></div>
+            </div>
+        </a>
+</body>
+</html>
